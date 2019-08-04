@@ -3,7 +3,7 @@ import time
 import requests
 from itchat.content import *
 
-KEY = '9978272a14e548e5989866104bb47135'  # 你需要用自己的API号替换掉
+KEY = '9978272a14e54******866104bb47135'  # 你需要用自己的API号替换掉
 LIST = []
 MEDIA = []
 start = 1
