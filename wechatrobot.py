@@ -3,8 +3,8 @@ import time
 import requests
 from itchat.content import *
 
-KEY = '9978272a14e548e5989866104bb47135'  # 你需要用自己的API号替换掉
-LIST = []
+KEY = '9978272a14e54******866104bb47135'  # 你需要用自己的API号替换掉
+LIST = []                                 # 用来存放已经有过对话的联系人
 MEDIA = []
 start = 1
 num = 0
@@ -59,7 +59,7 @@ def wechat():
                     if t1 - t0 > 10:
                         msg.user.send('等待超时，程序介入')
                         time.sleep(1)
-                        msg.user.send('你好！我是微信机器人助手小夏同学，我的主人在2019年4月16日使用python与核心类库itchat及图灵机器人API开发了我，我在主人无法及时回复时介入对话并执行简单任务，我不会搜集任何信息，谢谢合作！')
+                        msg.user.send('你好！我是微信机器人助手小夏同学（这个名字自己改，一般与图灵机器人的名字相同），我的主人在2019年4月16日使用python与核心类库itchat及图灵机器人API开发了我，我在主人无法及时回复时介入对话并执行简单任务，我不会搜集任何信息，谢谢合作！')
                         LIST.append(msg.FromUserName)      #保存在LIST中
                         break
                     
